@@ -18,18 +18,49 @@
         </nav>
     </header>
 
+     <!--Inhalt Kontaktseite-->
     <main>
       <section>
-            <h1>Impressum</h1>
-            <p>Lorem</p>
-        </section>
+            <h1>Kontakt</h1>
 
-        <!--Inhalt Impressum-->
+            <address>
+                <p><strong>Julia Radziej</strong><br>
+                Musterstraße 1<br>
+                12345 Musterstadt<br>
+                Tel: <a href="tel:+49123456789">0123/456789</a> </p>
+            </address>
 
-            <!--Footer-->
-            <footer>
-                <p><a href="impressum.html">Impressum</a></p>
-                <p><a href="kontakt.html" aria-current="page">Kontakt</a></p>
-                </footer>
+            <p>Solltest du Fragen, Wünsche oder Anmerkungen haben, dann sende mir gern eine Nachricht per Kontaktformular. 
+                Ich werde mich schnellstmöglich bei dir melden.<br>
+                
+                Vielen Dank!</p>
+            
+            <form action="kontakt-senden.php" method="post" aria-labelledby="kontakt-form">
+                <fieldset>
+                    <legend id="kontakt-form">Schreibe mir eine Nachricht</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+
+                    <label for="nachricht">Nachricht</label>
+                    <textarea>id="nachricht" name="nachricht" rows="5" required aria-required="true"</textarea>
+
+                    <div>id="form-error" aria-live="assertive"</div> 
+
+                    <button> type="submit" aria-label="Nachricht an Julia Radziej senden">Nachricht absenden </button>
+
+                </fieldset>
+            </form>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p><a href="impressum.html">Impressum</a></p>
+         <p><a href="kontakt.html" aria-current="page">Kontakt</a></p>
+    </footer>
 </body>
  </html>
