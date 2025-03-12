@@ -20,10 +20,48 @@ header a:hover {
     color: rgba(0, 0, 0, 0.522);
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     text-decoration: none;
-    color: black
+    color: black;
     display: flex;
+}
+
+.container1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.container1 a {
+    background-color: #DCD4BF;
+    color: black;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 100px;
+    text-transform: uppercase;
+
+}
+
+.container1 a:hover {
+    background-color: #d2c8b0; 
+}
+
+.logo {
+    margin-right: 30px;
 
 }
 
@@ -35,6 +73,31 @@ body {
     background-attachment: fixed;
     margin: 0px;
     padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style:normal;
+
+
+.header-image {
+    height: 100vh;
+    width: 100%;
+    object-fit:cover;
+}
+
+.contentbox {
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.contentbox-image {
+    height: 250px;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 /* Schriften */
@@ -43,7 +106,22 @@ body {
 
 h1 {
     color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 16px;
+}
 
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
+    letter-spacing: 5px;
+    margin: 16px;
+}
+
+p {
+    margin: 16px;
 }
