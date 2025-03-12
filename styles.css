@@ -34,12 +34,12 @@ header a:hover {
 
 .container1 {
     display:flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 25px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 16px;
+    margin-left: 16px;
 
 }
 
@@ -47,12 +47,16 @@ header a:hover {
     background-color: #DCD4BF;
     color: black;
     text-decoration: none;
+    text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 100px;
     text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 10px 1px #00000036;
 
 }
 
@@ -77,6 +81,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style:normal;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .header-image {
@@ -87,9 +94,13 @@ body {
 
 .contentbox {
     background-color: white;
-    margin: 10px;
+    margin: 16px;
     border-radius: 20px;
     padding: 5px;
+    margin-bottom: 30px;
+    max-width: 440px;
+    justify-content: center;
+    align-content: center;
 }
 
 .contentbox-image {
@@ -98,6 +109,9 @@ body {
     object-fit:cover;
     border-radius: 20px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Schriften */
@@ -111,6 +125,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     margin: 16px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -124,4 +139,43 @@ h2 {
 
 p {
     margin: 16px;
+}
+
+.googlemaps {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 16px;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color:black;
+    height: 200px;
+    box-shadow: 0px 2px 10px 1px #00000036;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-transform: uppercase;
+}
+
+footer a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(231, 201, 150, 0.522);
+}
+
+@media (min-width:768px) {
+    .inspo-box {
+        display:flex;
+        flex-direction: row;
+        height: 500px;
+    }
+
 }
