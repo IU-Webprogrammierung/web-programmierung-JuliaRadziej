@@ -26,6 +26,24 @@ header a:hover {
     justify-content: center;
 }
 
+.toggle-button {
+    position: absolute;
+    top: 37px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 30px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+}
+
 .container {
     text-decoration: none;
     color: black;
@@ -114,6 +132,17 @@ body {
     align-items: center;
 }
 
+.contentbox-image-home {
+    height: 250px;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Schriften */
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap')= "Lexend";
@@ -126,6 +155,7 @@ h1 {
     font-style: normal;
     margin: 16px;
     margin-top: 50px;
+    text-align: center;
 }
 
 h2 {
@@ -178,4 +208,32 @@ footer a:hover {
         height: 500px;
     }
 
+    .contentbox  (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        max-width: none;
+    }
+
+}
+
+@media (max-width:650px) {
+    header a {
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 }
