@@ -17,9 +17,27 @@
 
 <body>
     <!--Hauptnavigation-->
+    <section class="navi-mobile">
+        <input type="checkbox" id="click">
+        <label for="click">
+            <div class="menürahmen">
+                <div class="linie einsham"></div>
+                <div class="linie zweiham"></div>
+                <div class="linie dreiham"></div>
+            </div>
+        </label>
 
-    
+        <ul>
+            <li>Über mich</li>
+            <li>Projekte</li>
+            <li>Inspiration</li>
+            <li>Shops</li>
+        </ul>
+    </section>
+
     <header>
+
+
         <nav class="nav">
             <img class="logo" src="Bilder/Logo.png">
             <a href="#" class="toggle-button">
@@ -29,7 +47,7 @@
             </a>
 
             <div>
-                <a href="index.html" aria-current="page">Über mich</a>
+                <a class="current" href="index.html" aria-current="page">Über mich</a>
                 <a href="projekte.html">Projekte</a>
                 <a href="inspiration.html">Inspiration</a>
                 <a href="shops.html">Shops</a>
@@ -59,13 +77,13 @@
         </section>
 
         <!--Übersicht-->
-        <div class="inhalte">
-            <section class="contentbox">
+        <div class="inhalte-home">
+            <section class="contentbox-home-neu">
 
-                <article class="contentbox-home">
-                    <img class="contentbox-image-home" src="Bilder/Weihnachtskugeln.jpeg" width="150"
-                            alt="Personalisierte Weihnachtskugeln">
-                    
+                <article class="contentbox-home-picture-left">
+                    <img class="contentbox-image-home" src="Bilder/Weihnachtskugeln.jpeg"
+                        alt="Personalisierte Weihnachtskugeln">
+
 
                     <div class="description-home">
                         <h2>Meine Leidenschaft</h2>
@@ -81,8 +99,8 @@
                 </article>
             </section>
 
-            <section class="contentbox">
-                <article class="contentbox-home1">
+            <section class="contentbox-home-neu">
+                <article class="contentbox-home-picture-right">
                     <img class="contentbox-image-home" src="Bilder/FamilieHände.JPG" width="150"
                         alt="Hände und Pfoten">
                     <div class="description-home">
@@ -96,8 +114,8 @@
                 </article>
             </section>
 
-            <section class="contentbox">
-                <article class="contentbox-home">
+            <section class="contentbox-home-neu">
+                <article class="contentbox-home-picture-left">
                     <img class="contentbox-image-home" src="Bilder/Jola.JPG" width="150" alt="Französische Bulldogge">
                     <div class="description-home">
                         <h2>Jola</h2>
@@ -109,8 +127,8 @@
                 </article>
             </section>
 
-            <section class="contentbox">
-                <article class="contentbox-home1">
+            <section class="contentbox-home-neu">
+                <article class="contentbox-home-picture-right">
                     <img class="contentbox-image-home" src="Bilder/Pferd.jpg" width="150" alt="Pferd mit Reiterin">
                     <div class="description-home">
                         <h2>Meine Hobbies</h2>

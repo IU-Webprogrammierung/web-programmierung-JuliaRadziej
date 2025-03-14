@@ -16,6 +16,10 @@ header a {
     color: black;
 }
 
+.current {
+    text-decoration:underline;
+}
+
 header a:hover {
     color: rgba(0, 0, 0, 0.522);
 }
@@ -42,6 +46,61 @@ header a:hover {
     width: 100%;
     background-color: black;
     border-radius: 100px;
+}
+
+ul {
+    background-color: #DCD4BF;
+    display: none;
+}
+#click:checked ~ ul{display:block}
+#click {display:none}
+#click:checked ~ label .zweiham {opacity: 0;}
+#click:checked ~ label .einsham {
+    transform: rotate(-45deg);
+    top: 40px;
+    transition: transform 0.5s;
+}
+#click:checked ~ label .dreiham {
+    transform: rotate(45deg);
+    top: 40px;
+    transition: transform 0.5s;
+}
+
+
+.linie {
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.einsham {
+    top: 16px;
+}
+
+.zweiham {
+    top: 40px;
+}
+
+.dreiham {
+    top: 64px;
+}
+
+.menürahmen {
+    width: 80px;
+    height: 88px;
+    background-color: #DCD4BF;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navi-mobile {
+    margin: 0;
+    width: 100%;
 }
 
 .container {
@@ -111,6 +170,14 @@ body {
     flex-direction: column;
   }
 
+.inhalte-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2em;
+  }
+
 .header-image {
     height: 100vh;
     width: 100%;
@@ -125,6 +192,31 @@ body {
     margin-bottom: 2em;
     min-width: 20rem;
     max-width: 27.5rem;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.contentbox-home {
+    background-color: white;
+    margin: 0, 2em;
+    border-radius: 20px;
+    padding: 0 2em;
+    margin-bottom: 2em;
+    min-width: 20rem;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.contentbox-home-neu {
+    background-color: white;
+    margin: 1em;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 2em;
+    min-width: 20rem;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -153,8 +245,6 @@ body {
 }
 
 /* Schriften */
-
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap')= "Lexend";
 
 h1 {
     color: black;
@@ -279,6 +369,37 @@ footer a:hover {
         display:flex;
     }
 
+    .linie {
+        width: 60px;
+        height: 3px;
+    }
+
+    .menürahmen {
+        width: 100%;
+        margin: 0;
+        height: 66px;
+        position: relative;
+    }
+
+    .einsham {
+        top: 12px;
+    }
+    
+    .zweiham {
+        top: 30px;
+    }
+    
+    .dreiham {
+        top: 48px;
+    }
+
+    #click:checked ~ label .einsham {
+        top: 30px;
+    }
+    #click:checked ~ label .dreiham {
+        top: 30px;
+    }
+
     form {
         height: flex;
         width: 100%;
@@ -324,14 +445,15 @@ footer a:hover {
 }
 
 @media(min-width:500px) {
-    .contentbox-home {
+    .contentbox-home-picture-left {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
-    .contentbox-home1 {
+    .contentbox-home-picture-right {
         display: flex;
         flex-direction: row;
         flex-direction: row-reverse;
@@ -343,7 +465,11 @@ footer a:hover {
         min-width: 10em;
     }
 
-    .description-home {
-        
+
+}
+
+@media(max-width:500px) {
+    .contentbox {
+        max-width: 300px;
     }
 }
