@@ -124,9 +124,10 @@ body {
     padding: 5px;
     margin-bottom: 2em;
     min-width: 20rem;
-    max-width: 27,5rem;
+    max-width: 27.5rem;
     justify-content: center;
     align-content: center;
+    width: 100%;
 }
 
 .contentbox-image {
@@ -193,13 +194,13 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: flex;
-    width: 300px;
+    max-width: 600px;
     background-color: white;
     padding: 40px;
     border-radius: 30px;
     box-shadow: 0px 2px 10px 1px #00000036;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .inputs-container {
