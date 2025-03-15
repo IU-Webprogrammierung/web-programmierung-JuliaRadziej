@@ -16,6 +16,34 @@ header a {
     color: black;
 }
 
+ul {
+    margin-top: 0;
+    box-shadow: 0px 2px 10px 1px #00000036;
+}
+
+ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+   
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0em;
+    background-color: #DCD4BF;
+    height: 100%;
+    
+    
+}
+
+li a {
+    color: black;
+}
+
 .current {
     text-decoration:underline;
 }
@@ -30,23 +58,6 @@ header a:hover {
     justify-content: center;
 }
 
-.toggle-button {
-    position: absolute;
-    top: 37px;
-    right: 25px;
-    display: none;
-    flex-direction: column;
-    justify-content:space-between;
-    width: 30px;
-    height: 23px;
-}
-
-.toggle-button .bar {
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    border-radius: 100px;
-}
 
 ul {
     background-color: #DCD4BF;
@@ -96,6 +107,18 @@ ul {
     padding-right: 10px;
     position: relative;
     cursor: pointer;
+}
+
+.menürahmen1 {
+    display:flex;
+    justify-content:end;
+    margin-right: 2em;
+}
+
+
+.logo-mobile {
+    margin-top: 12px;
+    margin-left: 1em;
 }
 
 .navi-mobile {
@@ -179,7 +202,7 @@ body {
   }
 
 .header-image {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     object-fit:cover;
 }
@@ -215,6 +238,17 @@ body {
     margin: 1em;
     border-radius: 20px;
     padding: 5px;
+    margin-bottom: 2em;
+    min-width: 20rem;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.contentbox-shops {
+    background-color: white;
+    margin-right: 2em;
+    border-radius: 20px;
     margin-bottom: 2em;
     min-width: 20rem;
     justify-content: center;
@@ -302,7 +336,7 @@ form {
 
 input {
     height: 64px;
-    width: 240px;
+    width: 100%;
     margin: 15px;
     padding: 0px 25px;
     border-radius: 10px;
@@ -360,18 +394,15 @@ footer a:hover {
 
 
 @media (max-width:767px) {
-    header a {
+    header {
         display: none;
         width: 100%;
     }
 
-    .toggle-button {
-        display:flex;
-    }
 
     .linie {
-        width: 60px;
-        height: 3px;
+        width: 40px;
+        height: 2px;
     }
 
     .menürahmen {
@@ -382,7 +413,7 @@ footer a:hover {
     }
 
     .einsham {
-        top: 12px;
+        top: 16px;
     }
     
     .zweiham {
@@ -390,7 +421,7 @@ footer a:hover {
     }
     
     .dreiham {
-        top: 48px;
+        top: 44px;
     }
 
     #click:checked ~ label .einsham {
@@ -401,10 +432,9 @@ footer a:hover {
     }
 
     form {
-        height: flex;
-        width: 100%;
+        width: 27.5em;
         justify-content: center;
-        margin: 16px;
+        margin: 0;
 
     }
 
@@ -441,6 +471,9 @@ footer a:hover {
         max-height: 16em;
     }
 
+    .navi-mobile {
+        display: none;
+    }
 
 }
 
@@ -471,5 +504,27 @@ footer a:hover {
 @media(max-width:500px) {
     .contentbox {
         max-width: 300px;
+    }
+
+    form {
+        width: 300px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .inputs-container {
+        width: 200px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+}
+
+@media(max-width:650px) {
+    .googlemaps {
+        width: 328px;
+        height: 246px;
     }
 }
