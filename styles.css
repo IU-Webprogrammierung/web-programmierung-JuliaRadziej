@@ -138,8 +138,8 @@ ul {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 25px;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: 1em;
+    margin-left: 2em;
 
 }
 
@@ -219,6 +219,7 @@ body {
     align-content: center;
     width: 100%;
 }
+
 
 .contentbox-home {
     background-color: white;
@@ -390,6 +391,10 @@ footer a:hover {
     color: rgba(231, 201, 150, 0.522);
 }
 
+img:hover {
+    filter:opacity(90%);
+    transition: 0.5s;
+}
 
 
 @media (max-width:767px) {
@@ -456,6 +461,10 @@ footer a:hover {
     .contentbox-image {
         max-height: 16em;
     }
+
+    .container1 {
+        margin-left: 1em;
+    }
 }
 
 @media(min-width:768px) {
@@ -498,7 +507,7 @@ footer a:hover {
     }
 
     p {
-        margin-left: 2em;
+        margin-left: 2.2em;
         margin-right: 2em;
     }
 
