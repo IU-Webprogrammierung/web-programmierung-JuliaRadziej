@@ -166,6 +166,26 @@ ul {
     color: white
 }
 
+button{
+    background: rgb(225, 195, 159);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 0 0 black inset;
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: 200px 0 0 0 rgb(132, 88, 41) inset;
+}
+
+
 .logo {
     margin-right: 30px;
 
@@ -401,6 +421,38 @@ footer a:hover {
 .contentbox-image:hover {
     filter:opacity(100%);
     transition: 0.5s;
+}
+
+.instabanner {
+    background-color:rgb(238, 180, 132);
+    height: 180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-transform: uppercase;
+    flex-direction: column;
+    margin-top: 30px; 
+    text-decoration: none;
+    margin-bottom: -30px;
+}
+
+.instabanner a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+    letter-spacing: 3px;
+    font-size: 20px;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    text-align: center;
+    margin:1em;
 }
 
 
