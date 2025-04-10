@@ -156,13 +156,14 @@ ul {
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 1px;
-    box-shadow: 0px 2px 10px 1px #00000036;
-    transition: 0.2s;
+    box-shadow: 0 0 0 0 #514326;
+    transition: 0.3s;
 
 }
 
 .container1 a:hover {
-    background-color: #d2c8b0; 
+    background-color: #514326; 
+    color: white
 }
 
 .logo {
@@ -266,6 +267,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: zoom-in;
+    background-position: center;
 }
 
 .contentbox-image-home {
@@ -391,8 +394,12 @@ footer a:hover {
     color: rgba(231, 201, 150, 0.522);
 }
 
-img:hover {
-    filter:opacity(90%);
+.contentbox-image {
+    filter:opacity(70%)
+}
+
+.contentbox-image:hover {
+    filter:opacity(100%);
     transition: 0.5s;
 }
 
